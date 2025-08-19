@@ -8,28 +8,54 @@ function App() {
 
   return (
     <>
+    <div className="relative w-full ">
+  {/* Hero Image */}
+  <img
+    src="public/heroimage2.png"
+    alt="Wheels in Frame Hero"
+    className="w-full h-full object-cover"
+  />
 
-    <div className="flex flex-row justify-center items-center gap-[30px] h-auto w-auto ">
-  {/* <div className="h-8 max-w-[5%] bg-black ">
-    <img src="public/57006.jpg" alt="Logo" />
-  </div> */}
 
-  <div className="flex justify-center items-center h-12 w-[40%] gap-[100px] bg-black text-white rounded-[20px]">
-    <h1>Home</h1>
-    <h1>About Us</h1>
-    <h1>Products</h1>
-    <h1>Contact</h1>
-  </div>
+  {/* Navbar */}
+  <div className="absolute top-0 left-0 w-full flex justify-center items-center gap-[100px] p-6">
+    {/* Logo Placeholder */}
+    {/* <img src="public/logo.png" alt="Logo" className="h-10" /> */}
 
-  <div className="flex justify-center items-center h-12 w-[10%] bg-black text-white gap-[20px] rounded-[20px]">
-    <h1>Login</h1>
-    <h1>Signup</h1>
+    {/* Nav Links */}
+<div className="flex gap-12 font-bricolage font-light uppercase tracking-[2px] text-sm text-gray-400">
+  <h1 className="hover:text-white transition-colors">Home</h1>
+  <h1 className="hover:text-white transition-colors">About Us</h1>
+  <h1 className="hover:text-white transition-colors">Products</h1>
+  <h1 className="hover:text-white transition-colors">Contact</h1>
+</div>
+    
+
+
+    {/* Auth Buttons */}
+    <div className="flex gap-6 text-gray-200 font-light uppercase tracking-[2px] text-sm">
+      <h1 className="hover:text-white transition-colors">Login</h1>
+      <h1 className="hover:text-white transition-colors">Signup</h1>
+
+      
+    </div>
   </div>
 </div>
-
-<section className=" ">
-  <img src="public/heroimage2.png" alt="Wheels in Frame Hero" className=" " />
-</section>
+{/* menu section */}
+<div className="flex items-center justify-center  w-full h-auto gap-[20px] mt-8">
+  <div className="flex flex-row items-center justify-center w-[30%] p-4 ">
+    <img src="/helmet_image.png" className="w-[100%] rounded-[20px]"/>
+  </div>
+  <div className="flex flex-row items-center justify-center w-[30%] p-4 ">
+    <img src="/riddingjacket_image.png" className="w-[100%] rounded-[20px]"/>
+  </div>
+  <div className="flex flex-row items-center justify-center w-[30%] p-4 ">
+    <img src="/riddinggloves_img.png" className="w-[100%] rounded-[20px]"/>
+  </div>
+  <div className="flex flex-row items-center justify-center w-[30%] p-4 ">
+    <img src="/riddingshoes_img.png" className="w-[100%] rounded-[20px]"/>
+  </div>
+</div>
 
     </>
   )
