@@ -43,17 +43,21 @@ function App() {
 </div>
 {/* menu section */}
 <div className="flex items-center justify-center  w-full h-auto gap-[20px] mt-8">
-  <div className="flex flex-row items-center justify-center w-[30%] p-4 ">
+  <div className="flex flex-col items-center justify-center w-[30%] p-4 gap-[12px]">
     <img src="/helmet_image.png" className="w-[100%] rounded-[20px]"/>
+    <h1 className="font-light uppercase tracking-[2px] text-sm text-gray-400">Helmets</h1>
   </div>
-  <div className="flex flex-row items-center justify-center w-[30%] p-4 ">
+  <div className="flex flex-col items-center justify-center w-[30%] p-4 gap-[12px]">
     <img src="/riddingjacket_image.png" className="w-[100%] rounded-[20px]"/>
+    <h1 className="font-light uppercase tracking-[2px] text-sm text-gray-400"> jackets</h1>
   </div>
-  <div className="flex flex-row items-center justify-center w-[30%] p-4 ">
+  <div className="flex flex-col items-center justify-center w-[30%] p-4 gap-[12px]">
     <img src="/riddinggloves_img.png" className="w-[100%] rounded-[20px]"/>
+    <h1 className="font-light uppercase tracking-[2px] text-sm text-gray-400"> gloves</h1>
   </div>
-  <div className="flex flex-row items-center justify-center w-[30%] p-4 ">
+  <div className="flex flex-col items-center justify-center w-[30%] p-4 gap-[12px]">
     <img src="/riddingshoes_img.png" className="w-[100%] rounded-[20px]"/>
+    <h1 className="font-light uppercase tracking-[2px] text-sm text-gray-400"> shoes</h1>
   </div>
 </div>
 
