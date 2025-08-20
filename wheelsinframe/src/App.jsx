@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -43,18 +43,60 @@ function App() {
 </div>
 {/* aboutus section */}
 {/* outercontainer,inner- col,gap */}
-<div className="flex w-full h-full justify-center items-center  bg-black">
-  <div className="flex flex-col p-4 gap-6 text-center mt-8 mb-8">
-    <div className="font-bricolage text-white text-4xl">
-      Wheels In Frame
+<div className="relative w-full h-screen bg-black flex justify-center items-center overflow-hidden">
+  {/* Container for rotating particles */}
+  <div className="absolute w-full h-full">
+    {[...Array(40)].map((_, i) => (
+      <span
+        key={i}
+        className="absolute w-1 h-1 bg-blue-500 rounded-full animate-particle"
+        style={{
+          top: `${Math.random() * 100}%`,
+          left: `${Math.random() * 100}%`,
+          animationDuration: `${3 + Math.random() * 3}s`,
+          animationDelay: `${Math.random() * 10}s`,
+        }}
+      ></span>
+    ))}
+  </div>
+
+  {/* About Us Content */}
+  <div className="text-center max-w-7xl p-1 relative z-10">
+    <h2 className="text-white font-bricolage text-6xl font-bold mb-4">About Us</h2>
+    <p className="text-gray-300 font-light uppercase tracking-[2px] text-xl">
+      We’re not just another shopping site. Wheels In Frame is a smart
+      comparison hub for bikers — helping riders save time, save money,
+      and focus on what truly matters.
+    </p>
+    <p className="text-xl uppercase mt-4">
+  for queries{" "}
+  <span className="inline-block bg-green-400 text-black  px-1 py-1 rounded-[10px] ml-1 ">
+    contact us
+  </span>
+</p>
+<section className=" py-10 mt-30">
+  <h2 className="text-3xl font-bold text-white text-center ">
+    Featured Brands
+  </h2>
+
+  {/* Scrolling container */}
+  <div className="overflow-hidden whitespace-nowrap relative ">
+    <div className=" flex justify-center items-center animate-scroll flex gap-16 mt-8">
+      <img src="/brands/studds.png" alt="Studds" className="h-16" />
+      <img src="/brands/vega.png" alt="Vega" className="h-16" />
+      <img src="/brands/axor.png" alt="Axor" className="h-16" />
+      <img src="/brands/steelbird.png" alt="Steelbird" className="h-16" />
+      <img src="/brands/royalenfield.png" alt="Royal Enfield" className="h-16" />
+      <img src="/brands/ls2.png" alt="LS2" className="h-16" />
+      {/* repeat logos again to create loop effect */}
+      <img src="/brands/studds.png" alt="Studds" className="h-16" />
+      <img src="/brands/vega.png" alt="Vega" className="h-16" />
+      <img src="/brands/axor.png" alt="Axor" className="h-16" />
     </div>
-    <div className="text-gray-400 font-light uppercase text-2xl">
-      We’re not just another shopping site, we’re a smart comparison hub for bikers!
-    </div>
-    <div className ="text-gray-400 font-light text-xl">Wheels in Frame helps riders save time, save money, and focus on what truly matters.</div>
+  </div>
+</section>
   </div>
 </div>
-
 
 {/* menu section */}
 <div className="flex items-center justify-center  w-full h-auto gap-[20px] mt-8">
