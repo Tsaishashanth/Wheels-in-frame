@@ -43,9 +43,9 @@ function App() {
 </div>
 {/* aboutus section */}
 {/* outercontainer,inner- col,gap */}
-<div className="relative w-full h-screen bg-black flex justify-center items-center overflow-hidden">
+<div className="relative w-full h-screen bg-gradient-to-b from-black via-[#0f172a] to-black flex justify-center items-center overflow-hidden">
   {/* Container for rotating particles */}
-  <div className="absolute w-full h-full">
+  {/* <div className="absolute w-full h-full">
     {[...Array(40)].map((_, i) => (
       <span
         key={i}
@@ -58,12 +58,12 @@ function App() {
         }}
       ></span>
     ))}
-  </div>
+  </div> */}
 
   {/* About Us Content */}
-  <div className="text-center max-w-7xl p-1 relative z-10">
+  <div className="text-center max-w-5xl p-1 relative z-10">
     <h2 className="text-white font-bricolage text-6xl font-bold mb-4">About Us</h2>
-    <p className="text-gray-300 font-light uppercase tracking-[2px] text-xl">
+    <p className="text-gray-300 font-light uppercase tracking-[2px] text-xl mt-10">
       We’re not just another shopping site. Wheels In Frame is a smart
       comparison hub for bikers — helping riders save time, save money,
       and focus on what truly matters.
@@ -74,25 +74,48 @@ function App() {
     contact us
   </span>
 </p>
-<section className=" py-10 mt-30">
-  <h2 className="text-3xl font-bold text-white text-center ">
+<section className=" py-10 mt-40">
+  <h2 className="text-4xl font-bricolage text-white text-center ">
     Featured Brands
   </h2>
 
   {/* Scrolling container */}
-  <div className="overflow-hidden whitespace-nowrap relative ">
+  <div className="overflow-hidden whitespace-nowrap relative rounded-[50px]">
     <div className=" flex justify-center items-center animate-scroll flex gap-16 mt-8">
-      <img src="/brands/studds.png" alt="Studds" className="h-16" />
-      <img src="/brands/vega.png" alt="Vega" className="h-16" />
-      <img src="/brands/axor.png" alt="Axor" className="h-16" />
-      <img src="/brands/steelbird.png" alt="Steelbird" className="h-16" />
-      <img src="/brands/royalenfield.png" alt="Royal Enfield" className="h-16" />
-      <img src="/brands/ls2.png" alt="LS2" className="h-16" />
-      {/* repeat logos again to create loop effect */}
-      <img src="/brands/studds.png" alt="Studds" className="h-16" />
-      <img src="/brands/vega.png" alt="Vega" className="h-16" />
-      <img src="/brands/axor.png" alt="Axor" className="h-16" />
+      <img src="/brandlogo/alpinestars-seeklogo.png" alt="Studds" className="h-16" />
+      {/* <img src="/brandlogo/axor-helmets-seeklogo.png" alt="Vega" className="h-16" /> */}
+      {/* <img src="/brandlogo/ls2-helmets-seeklogo.png" alt="Axor" className="h-16" /> */}
+      <img src="/brandlogo/kyt-helmet-seeklogo.png" alt="Steelbird" className="h-16" />
+      <img src="/brandlogo/airoh-helmet-seeklogo.png" alt="Steelbird" className="h-16" />
+      <img src="/brandlogo/arai-helmet-seeklogo.png" alt="Steelbird" className="h-16" />
+      <img src="/brandlogo/nhk-helmet-seeklogo.png" alt="Steelbird" className="h-16" />
+      <img src="/brandlogo/mt-helmets-seeklogo.png" alt="Steelbird" className="h-16" />
+      <img src="/brandlogo/studds-seeklogo.png" alt="Steelbird" className="h-16" />
+      <img src="/brandlogo/shoei-seeklogo.png" alt="Steelbird" className="h-16" />
+      <img src="/brandlogo/hjc-seeklogo.png" alt="Steelbird" className="h-16" />
+
+      {/* Set 2 (duplicate for infinite loop) */}
+      <img src="/brandlogo/alpinestars-seeklogo.png" alt="Studds" className="h-16" />
+      {/* <img src="/brandlogo/axor-helmets-seeklogo.png" alt="Vega" className="h-16" /> */}
+      {/* <img src="/brandlogo/ls2-helmets-seeklogo.png" alt="Axor" className="h-16" /> */}
+      <img src="/brandlogo/kyt-helmet-seeklogo.png" alt="Steelbird" className="h-16" />
+      <img src="/brandlogo/airoh-helmet-seeklogo.png" alt="Steelbird" className="h-16" />
+      <img src="/brandlogo/arai-helmet-seeklogo.png" alt="Steelbird" className="h-16" />
+      <img src="/brandlogo/nhk-helmet-seeklogo.png" alt="Steelbird" className="h-16" />
+      <img src="/brandlogo/mt-helmets-seeklogo.png" alt="Steelbird" className="h-16" />
+      <img src="/brandlogo/studds-seeklogo.png" alt="Steelbird" className="h-16" />
+      <img src="/brandlogo/shoei-seeklogo.png" alt="Steelbird" className="h-16" />
+      <img src="/brandlogo/hjc-seeklogo.png" alt="Steelbird" className="h-16" />
+
     </div>
+  <div className="absolute top-0 left-0 h-full w-32 
+                  bg-gradient-to-r from-black via-transparent to-transparent 
+                  pointer-events-none rounded-r-full"></div>
+
+  {/* Gradient overlay right */}
+  <div className="absolute top-0 right-0 h-full w-32 
+                  bg-gradient-to-l from-black via-transparent to-transparent 
+                  pointer-events-none rounded-l-full"></div>
   </div>
 </section>
   </div>
