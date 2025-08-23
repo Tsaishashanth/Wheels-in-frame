@@ -141,8 +141,57 @@ function App() {
   </div>
 </div>
 
+{/* footer section */}
+<footer className="flex justify-center items-center flex-col bg-gray-900 text-gray-400 py-4 text-center mt-8  ">
+  {/* two divs rows 1-> winf location mail 2-> name email pass */}
+  {/* 1st row */}
+  <div className ="flex relative w-full h-auto mt-8 flex-row justify-center items-center gap-20 mb-15">
+<div className="w-[50%]  flex flex-col items-center gap-4">
+  <div className="flex text-4xl font-bricolage text-grey-white-400 items-center justify-center">Wheels In Frame</div>
+  <div className="mt-6 text-gray-300 font-light uppercase tracking-[2px] text-xl">
+    Contact us for any queries, feedback, or support.
+  </div>
 
-<footer className="bg-gray-900 text-gray-400 py-4 text-center mt-8  ">
+  {/* Contact Info */}
+  <div className="flex items-start gap-2 text-xl text-gray-400">
+    <i className="fas fa-map-marker-alt"></i>
+    Bangalore
+  </div>
+  <div className="flex items-start gap-2 text-xl text-gray-400">
+    <i className="fas fa-envelope"></i>
+    wheelsinframesupport@example.com
+  </div>
+
+  {/* Social Icons */}
+<div className="flex flex-col items-start gap-3 mt-5">
+  <div className="text-gray-300 uppercase tracking-[2px]">Follow us on</div>
+  <div className="flex items-start gap-8 text-gray-400 text-2xl">
+    <i className="fab fa-facebook-f"></i>
+    <i className="fab fa-instagram"></i>
+    <i className="fab fa-twitter"></i>
+  </div>
+</div>
+
+</div>
+
+    {/* 2nd row -> send a msg */}
+  <div className="w-[50%] mt-4 flex flex-col items-start gap-4">
+    <div className="text-3xl font-bricolage text-gray-400">Send Message</div>
+    <input 
+      type="text" 
+      placeholder="Username" 
+      className="w-[70%] p-3 rounded-md border border-gray-600 bg-black text-gray-300 focus:outline-none"
+    />
+    <textarea 
+      placeholder="Send a message..." 
+      className="w-[70%] p-3 rounded-md border border-gray-600 bg-black text-gray-300 focus:outline-none h-32 resize-none"
+    ></textarea>
+<button className="flex items-center justify-center bg-green-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-md">
+  Submit
+</button>
+
+  </div>
+  </div>
   <p className="text-xl mt-1">
     © {new Date().getFullYear()} Wheels In Frame. All rights reserved.
   </p>
