@@ -96,8 +96,7 @@ function App() {
 
       {/* Set 2 (duplicate for infinite loop) */}
       <img src="/brandlogo/alpinestars-seeklogo.png" alt="Studds" className="h-16" />
-      {/* <img src="/brandlogo/axor-helmets-seeklogo.png" alt="Vega" className="h-16" /> */}
-      {/* <img src="/brandlogo/ls2-helmets-seeklogo.png" alt="Axor" className="h-16" /> */}
+     {/* <img src="/brandlogo/ls2-helmets-seeklogo.png" alt="Axor" className="h-16" /> */}
       <img src="/brandlogo/kyt-helmet-seeklogo.png" alt="Steelbird" className="h-16" />
       <img src="/brandlogo/airoh-helmet-seeklogo.png" alt="Steelbird" className="h-16" />
       <img src="/brandlogo/arai-helmet-seeklogo.png" alt="Steelbird" className="h-16" />
