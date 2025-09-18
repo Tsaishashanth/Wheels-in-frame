@@ -11,7 +11,7 @@ function App() {
     <div className="relative w-full ">
   {/* Hero Image */}
   <img
-    src="public/heroimage2.png"
+    src="/heroimage2.png"
     alt="Wheels in Frame Hero"
     className="w-full h-full object-cover"  
   />
